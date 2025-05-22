@@ -1,0 +1,23 @@
+{
+  "name": "image-server",
+  "version": "1.0.0",
+  "description": "Upload server with hash url generation.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MyLoginHathBeenTaken/image-server.git"
+  },
+  "author": "Jason",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/MyLoginHathBeenTaken/image-server/issues"
+  },
+  "homepage": "https://github.com/MyLoginHathBeenTaken/image-server#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "multer": "^1.4.5-lts.2"
+  }
+}
