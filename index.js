@@ -3,7 +3,7 @@ const { createHash } = require('node:crypto');
 const express = require('express');
 const app = express()
 const multer = require('multer');
-const port = 6969;
+const port = 4444;
 const path = './uploads'
 // Configure Multer storage
 const storage = multer.memoryStorage()
