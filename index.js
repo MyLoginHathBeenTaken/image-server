@@ -56,7 +56,7 @@ function writeBufferToFile(filePath, buffer) {
 app.post('/upload', upload.single('uploadedFile'), async (req, res) => {
   let hash = sha1Hash(req.file.buffer)
   writeBufferToFile(`${path}/${req.file.originalname.replace(/.*(?=\.)/, hash)}`, req.file.buffer)
-  res.status(201).json({ hash : `${req.file.originalname.replace(/.*(?=\.)/});
+  res.status(201).json({ hash : `${req.file.originalname.replace(/.*(?=\.)/, hash)}`});
   console.log(hash, req.body.someData)
 });
 
